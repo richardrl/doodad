@@ -1,3 +1,6 @@
+# virtualenvs
+py36/
+py27/
 aws_config/
 
 # Byte-compiled / optimized / DLL files
