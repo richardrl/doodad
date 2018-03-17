@@ -23,8 +23,10 @@ def hash_file(filename):
 
 def call_and_wait(cmd, verbose=False, dry=False):
     if dry or verbose:
+        print("printing cmd")
         print(cmd)
     if not dry:
+        print("call_and_wait 28" + str(cmd))
         p = subprocess.Popen(cmd, shell=True)
     try:
         p.wait()

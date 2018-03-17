@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4b01ab10-91f7-44d9-b204-93c375ca627b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/doodad/launch_tools.py" afterPath="$PROJECT_DIR$/doodad/launch_tools.py" />
+      <change beforePath="$PROJECT_DIR$/doodad/mode.py" afterPath="$PROJECT_DIR$/doodad/mode.py" />
+      <change beforePath="$PROJECT_DIR$/doodad/mount.py" afterPath="$PROJECT_DIR$/doodad/mount.py" />
+      <change beforePath="$PROJECT_DIR$/doodad/utils.py" afterPath="$PROJECT_DIR$/doodad/utils.py" />
+      <change beforePath="$PROJECT_DIR$/examples/ec2_launch/ec2_launch_test.py" afterPath="$PROJECT_DIR$/examples/ec2_launch/ec2_launch_test.py" />
+      <change beforePath="$PROJECT_DIR$/scripts/setup_ec2.py" afterPath="$PROJECT_DIR$/scripts/setup_ec2.py" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/.idea/misc.xml" afterPath="$PROJECT_DIR$/../newnrl/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/.idea/modules.xml" afterPath="$PROJECT_DIR$/../newnrl/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/.idea/newnrl.iml" afterPath="$PROJECT_DIR$/../newnrl/.idea/newnrl.iml" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../newnrl/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../newnrl/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongseq/board.py" afterPath="$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongseq/board.py" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/__init__.py" afterPath="$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/board.py" afterPath="$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/board.py" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/player.py" afterPath="$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/player.py" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/curiosity/src/gym" afterPath="$PROJECT_DIR$/../newnrl/curiosity/src/gym" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/gym-ple" afterPath="$PROJECT_DIR$/../newnrl/gym-ple" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/level-gen/level-gen.ipynb" afterPath="$PROJECT_DIR$/../newnrl/level-gen/level-gen.ipynb" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.episode_batch.0.1098.stats.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.episode_batch.0.30937.stats.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.manifest.0.1098.manifest.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.manifest.0.30937.manifest.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video153000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video153000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video154000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video154000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video155000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video155000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video156000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video156000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video157000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video157000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video158000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video158000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video159000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video159000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video160000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video160000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video161000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video161000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video162000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video162000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video163000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video163000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video164000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video164000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video165000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video165000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video166000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video166000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video167000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video167000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video168000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video168000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video169000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video169000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video170000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video170000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video171000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video171000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video172000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video172000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video173000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video173000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video174000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video174000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video175000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video175000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video176000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video176000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video177000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video177000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video178000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video178000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video179000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video179000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video180000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video180000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video181000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video181000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video182000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video182000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video183000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video183000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video184000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video184000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video185000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video185000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video186000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video186000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video187000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video187000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video188000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video188000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video189000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video189000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video190000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video190000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video191000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video191000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video192000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video192000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video193000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video193000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video194000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video194000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video195000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video196000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video196000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video197000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video197000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video198000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video198000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video199000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video199000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video200000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video200000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video201000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video201000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video202000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c-agent-results-test/openaigym.video.0.30937.video202000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c.py" afterPath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c.py" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/demo.py" afterPath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/demo.py" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/envs.py" afterPath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/envs.py" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/inference.py" afterPath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/inference.py" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/outdir/openaigym.video.0.9542.video000000.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/outdir/openaigym.video.0.9542.video000000.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/outdir/openaigym.video.0.9542.video000001.meta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/outdir/openaigym.video.0.9542.video000001.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/outdir/outdir.tar.gz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/requirements.txt" afterPath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/requirements.txt" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/train.py" afterPath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/train.py" />
+      <change beforePath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/worker.py" afterPath="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/worker.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/doodad$ec2_test.coverage" NAME="ec2_test Coverage Results" MODIFIED="1520756827418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/doodad$Unnamed.coverage" NAME="ec2 launch Coverage Results" MODIFIED="1521287165736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ec2_launch_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/ec2_launch/ec2_launch_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="57" column="25" lean-forward="false" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_pydev_execfile.py" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="launch_tools.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doodad/launch_tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="82" column="9" lean-forward="false" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="board.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/board.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1848">
+              <caret line="92" column="30" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/player.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inference.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../newnrl/noreward-rl-private/src/inference.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="58" column="35" lean-forward="false" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+              <folding>
+                <element signature="e#22#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mode.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doodad/mode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2757">
+              <caret line="128" column="62" lean-forward="false" selection-start-line="128" selection-start-column="62" selection-end-line="128" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/1045981716/builtins.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1">
+              <caret line="4928" column="8" lean-forward="false" selection-start-line="4928" selection-start-column="8" selection-end-line="4928" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mount.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doodad/mount.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="92" column="63" lean-forward="false" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a3c.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="170" column="44" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="170" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>EC2Autoconf</find>
+      <find>self.docker_image</find>
+      <find>docker run</find>
+      <find>aws ec2 create</find>
+      <find>docker_image</find>
+      <find>docker --config</find>
+      <find>3 seconds</find>
+      <find>go_vncdriver</find>
+      <find>testing</find>
+      <find>target</find>
+      <find>get_</find>
+      <find>Running in docker</find>
+      <find>event.__dict</find>
+      <find>sync</find>
+      <find>cd /home/ubuntu/newnrl/gym-ple</find>
+      <find>get_docker</find>
+      <find>docker_cmd</find>
+      <find>.replace('richard', 'ubuntu')</find>
+      <find>in args</find>
+      <find>aws</find>
+      <find>aws s3 sync</find>
+      <find>aws s3</find>
+      <find>log</find>
+      <find>launch</find>
+      <find>getvalue</find>
+      <find>docker exec</find>
+      <find>player</find>
+      <find>out-dir</find>
+      <find>outdir</find>
+      <find>args.out_dir</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../newnrl" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/worker.py" />
+        <option value="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/demo.py" />
+        <option value="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/requirements.txt" />
+        <option value="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c.py" />
+        <option value="$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/__init__.py" />
+        <option value="$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/board.py" />
+        <option value="$PROJECT_DIR$/doodad/launch_tools.py" />
+        <option value="$PROJECT_DIR$/examples/ec2_launch/ec2_launch_test.py" />
+        <option value="$PROJECT_DIR$/doodad/mount.py" />
+        <option value="$PROJECT_DIR$/doodad/mode.py" />
+        <option value="$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/player.py" />
+        <option value="$PROJECT_DIR$/../newnrl/noreward-rl-private/src/inference.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="75" />
+    <option name="y" value="24" />
+    <option name="width" value="2495" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="doodad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newnrl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doodad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newnrl" type="462c0819:PsiDirectoryNode" />
+              <item name="noreward-rl-private" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doodad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newnrl" type="462c0819:PsiDirectoryNode" />
+              <item name="noreward-rl-private" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../newnrl" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.ec2 launch">
+    <configuration name="ec2 launch" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/py36/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="doodad" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/ec2_launch/ec2_launch_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ec2_test" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/py36/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="doodad" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/ec2_launch/ec2_launch_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.ec2_test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ec2 launch" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4b01ab10-91f7-44d9-b204-93c375ca627b" name="Default" comment="" />
+      <created>1520753035080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520753035080</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="75" y="24" width="2495" height="1056" extended-state="4" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40837103" sideWeight="0.07398274" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.49856144" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25606248" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.4919852" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40837103" sideWeight="0.9260173" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/doodad/mode.py</url>
+          <line>474</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/doodad/mode.py</url>
+          <line>523</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/doodad/mode.py</url>
+          <line>509</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/doodad/mode.py</url>
+          <line>330</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/doodad/mode.py</url>
+          <line>481</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/doodad/mode.py</url>
+          <line>128</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/doodad/launch_tools.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>extra_args</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>docker_cmd</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mnt_args</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>remote_tar_name</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>remote_unpack_name</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/1045981716/_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="1277" column="8" lean-forward="false" selection-start-line="1277" selection-start-column="8" selection-end-line="1277" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../newnrl/noreward-rl-private/src/worker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding>
+            <element signature="e#44#67#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../newnrl/noreward-rl-private/src/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../newnrl/curiosity/src/universe/universe/envs/vnc_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../newnrl/noreward-rl-private/src/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#83#120#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../newnrl/noreward-rl-private/src/a3c.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="170" column="44" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="170" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/1045981716/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="4928" column="8" lean-forward="false" selection-start-line="4928" selection-start-column="8" selection-end-line="4928" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/ec2_launch/ec2_launch_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="57" column="25" lean-forward="false" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="90" column="45" lean-forward="true" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+          <folding>
+            <element signature="e#29#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doodad/mount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="92" column="63" lean-forward="false" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doodad/launch_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="82" column="9" lean-forward="false" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doodad/mode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2757">
+          <caret line="128" column="62" lean-forward="false" selection-start-line="128" selection-start-column="62" selection-end-line="128" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../newnrl/noreward-rl-private/src/inference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="58" column="35" lean-forward="false" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+          <folding>
+            <element signature="e#22#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1848">
+          <caret line="92" column="30" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../newnrl/PyGame-Learning-Environment/ple/games/monsterkongtest/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

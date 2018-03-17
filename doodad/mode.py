@@ -57,13 +57,14 @@ class Local(LaunchMode):
             commands.append('export PYTHONPATH=$PYTHONPATH:%s' % (':'.join(py_path)))
 
         # Add main command
+        print("Python command " + str(cmd))
         commands.append(cmd)
 
         # cleanup
         commands.extend(cleanup_commands)
 
         # Call everything
-        commands.call_and_wait()
+        commands.call_and_wait(verbose=True)
 
 LOCAL = Local()
 
@@ -86,6 +87,13 @@ class DockerMode(LaunchMode):
                 cmd_list.append('echo \"Running in docker (gpu)\"')
             else:
                 cmd_list.append('echo \"Running in docker\"')
+        # Adding pre-setup
+        cmd_list.append('pip install pygame')
+        cmd_list.append('cd /home/ubuntu/newnrl/PyGame-Learning-Environment')
+        cmd_list.append('pip install -e .')
+        cmd_list.append('cd /home/ubuntu/newnrl/gym-ple')
+        cmd_list.append('pip install -e .')
+        cmd_list.append('cd /home/ubuntu/newnrl/noreward-rl-private/src')
         if pythonpath:
             cmd_list.append('export PYTHONPATH=$PYTHONPATH:%s' % (':'.join(pythonpath)))
         if no_root:
@@ -112,11 +120,13 @@ class DockerMode(LaunchMode):
         if use_tty:
             docker_prefix = 'docker run %s -ti %s /bin/bash -c ' % (extra_args, self.docker_image)
         else:
-            docker_prefix = 'docker run %s %s /bin/bash -c ' % (extra_args, self.docker_image)
+            # docker_prefix = 'docker run -t -d %s %s /bin/bash -c ' % (extra_args, self.docker_image)
+            docker_prefix = 'docker run -t -d %s %s ' % (extra_args, self.docker_image)
         if self.gpu:
             docker_prefix = 'nvidia-'+docker_prefix
+        cmd_list.append('')
         main_cmd = cmd_list.to_string()
-        full_cmd = docker_prefix + ("\'%s\'" % main_cmd)
+        full_cmd = docker_prefix + ("; sleep 3; docker exec -i %s /bin/bash -c " %docker_name) +("\'%s\'" % main_cmd)
         return full_cmd
 
 
@@ -138,7 +148,7 @@ class LocalDocker(DockerMode):
                     py_path.append(mount_pnt)
             else:
                 raise NotImplementedError(type(mount))
-
+        call_and_wait('ls')
         full_cmd = self.get_docker_cmd(cmd, extra_args=mnt_args, pythonpath=py_path,
                 checkpoint=self.checkpoints)
         if verbose:
@@ -286,7 +296,7 @@ class EC2SpotDocker(DockerMode):
     def make_timekey(self):
         return '%d'%(int(time.time()*1000))
 
-    def launch_command(self, main_cmd, mount_points=None, dry=False, verbose=False):
+    def launch_command(self, main_cmd, mount_points=None, dry=False, verbose=True):
         default_config = dict(
             image_id=self.image_id,
             instance_type=self.instance_type,
@@ -345,16 +355,18 @@ class EC2SpotDocker(DockerMode):
                         file_hash = mount.local_file_hash
                         s3_path = mount.path_on_remote
                     remote_tar_name = '/tmp/'+file_hash+'.tar'
-                    remote_unpack_name = '/tmp/'+file_hash
+                    remote_unpack_name = '/home/ubuntu/'
                     sio.write("aws s3 cp {s3_path} {remote_tar_name}\n".format(s3_path=s3_path, remote_tar_name=remote_tar_name))
                     sio.write("mkdir -p {local_code_path}\n".format(local_code_path=remote_unpack_name))
                     sio.write("tar -xvf {remote_tar_name} -C {local_code_path}\n".format(
                         local_code_path=remote_unpack_name,
                         remote_tar_name=remote_tar_name))
-                    mount_point =  os.path.join('/mounts', mount.mount_point.replace('~/',''))
-                    mnt_args += ' -v %s:%s' % (os.path.join(remote_unpack_name, os.path.basename(mount.local_dir)), mount_point)
+                    mount_point =  os.path.join('/mounts', mount.mount_point.replace('~/','').replace('richard', 'ubuntu')) # replace /home/richard/newnrl with /home/ubuntu/newnrl
+                    # mnt_args += ' -v %s:%s' % (os.path.join(remote_unpack_name, os.path.basename(mount.local_dir)), mount_point)
+                    mnt_args += ' -v %s:%s' % (os.path.join(remote_unpack_name, '/home/ubuntu/newnrl', mount_point), mount_point)
                     if mount.pythonpath:
-                        py_path.append(mount_point)
+                        # py_path.append(mount_point)
+                        py_path.append('/home/ubuntu/newnrl') #Changing /home/richard/newnrl
                 else:
                     raise ValueError()
             elif isinstance(mount, MountS3):
@@ -375,17 +387,29 @@ class EC2SpotDocker(DockerMode):
                 sio.write("mkdir -p {remote_dir}\n".format(
                     remote_dir=ec2_local_dir)
                 )
-                mnt_args += ' -v %s:%s' % (ec2_local_dir, mount.mount_point)
+                # mnt_args += ' -v %s:%s' % (ec2_local_dir, mount.mount_point.replace('richard', 'ubuntu'))
+                mnt_args += ' -v %s:%s' % (mount.mount_point.replace('richard', 'ubuntu'), mount.mount_point.replace('richard', 'ubuntu'))
 
                 # Sync interval
+                # sio.write("""
+                # while /bin/true; do
+                #     aws s3 sync --exclude '*' {include_string} {log_dir} {s3_path}
+                #     sleep {periodic_sync_interval}
+                # done & echo sync initiated
+                # """.format(
+                #     include_string=mount.include_string,
+                #     log_dir=ec2_local_dir.replace("richard", "ubuntu"),
+                #     s3_path=s3_path,
+                #     periodic_sync_interval=mount.sync_interval
+                # ))
                 sio.write("""
                 while /bin/true; do
-                    aws s3 sync --exclude '*' {include_string} {log_dir} {s3_path}
+                    aws s3 sync {log_dir} {s3_path}
                     sleep {periodic_sync_interval}
                 done & echo sync initiated
                 """.format(
                     include_string=mount.include_string,
-                    log_dir=ec2_local_dir,
+                    log_dir=ec2_local_dir.replace("richard", "ubuntu"),
                     s3_path=s3_path,
                     periodic_sync_interval=mount.sync_interval
                 ))
@@ -397,25 +421,25 @@ class EC2SpotDocker(DockerMode):
                 # This is hoping that there's at least 3 seconds between when
                 # the spot instance gets marked for  termination and when it
                 # actually terminates.
-                sio.write("""
-                    while /bin/true; do
-                        if [ -z $(curl -Is http://169.254.169.254/latest/meta-data/spot/termination-time | head -1 | grep 404 | cut -d \  -f 2) ]
-                        then
-                            logger "Running shutdown hook."
-                            aws s3 cp --recursive {log_dir} {s3_path}
-                            break
-                        else
-                            # Spot instance not yet marked for termination.
-                            # This is hoping that there's at least 3 seconds
-                            # between when the spot instance gets marked for
-                            # termination and when it actually terminates.
-                            sleep 3
-                        fi
-                    done & echo log sync initiated
-                """.format(
-                    log_dir=ec2_local_dir,
-                    s3_path=s3_path,
-                ))
+                # sio.write("""
+                #     while /bin/true; do
+                #         if [ -z $(curl -Is http://169.254.169.254/latest/meta-data/spot/termination-time | head -1 | grep 404 | cut -d \  -f 2) ]
+                #         then
+                #             logger "Running shutdown hook."
+                #             aws s3 cp --recursive {log_dir} {s3_path}
+                #             break
+                #         else
+                #             # Spot instance not yet marked for termination.
+                #             # This is hoping that there's at least 3 seconds
+                #             # between when the spot instance gets marked for
+                #             # termination and when it actually terminates.
+                #             sleep 3
+                #         fi
+                #     done & echo log sync initiated
+                # """.format(
+                #     log_dir=ec2_local_dir,
+                #     s3_path=s3_path,
+                # ))
             else:
                 raise NotImplementedError()
 

@@ -9,7 +9,7 @@ from doodad.utils import EXAMPLES_DIR, REPO_DIR
 
 # Local docker
 mode_docker = dd.mode.LocalDocker(
-    image='python:3.5',
+    image='richardrl/nrl:latest',
 )
 
 # or this! Run experiment via docker on another machine through SSH
@@ -19,21 +19,24 @@ mode_ssh = dd.mode.SSHDocker(
 )
 
 # or use this!
-mode_ec2=None
-#mode_ec2 = dd.mode.EC2AutoconfigDocker(
-#    image='python:3.5',
-#    region='us-west-1',
-#    instance_type='m3.medium',
-#    spot_price=0.02,
-#)
+# mode_ec2=None
+mode_ec2 = dd.mode.EC2AutoconfigDocker(
+   image='richardrl/nrl:latest',
+   region='us-east-2',
+   instance_type='c4.4xlarge',
+    # instance_type='m3.medium',
+   spot_price=0.3,
+    terminate=False,
+)
 
-MY_RUN_MODE = mode_docker  # CHANGE THIS
+MY_RUN_MODE = mode_ec2  # CHANGE THIS
 
 # Set up code and output directories
-OUTPUT_DIR = '/example/outputs'  # this is the directory visible to the target
+OUTPUT_DIR = '/home/richard/newnrl/noreward-rl-private/src/tmp/'  # this is the directory visible to the target
+REPO_DIR = '/home/richard/newnrl/'
 mounts = [
-    mount.MountLocal(local_dir=REPO_DIR, pythonpath=True), # Code
-    mount.MountLocal(local_dir=os.path.join(EXAMPLES_DIR, 'secretlib'), pythonpath=True), # Code
+    mount.MountLocal(local_dir=REPO_DIR, pythonpath=True, filter_dir=['tmp/', 'mapgen2_take2/', 'testmaps', 'outdir', 'curiosity', 'doomFiles', 'a3c-agent-results-test']), # Code
+    # mount.MountLocal(local_dir=os.path.join(EXAMPLES_DIR, 'secretlib'), pythonpath=True), # Code
 ]
 
 if MY_RUN_MODE == mode_ec2:
@@ -43,17 +46,21 @@ else:
         mount_point=OUTPUT_DIR, output=True)
 mounts.append(output_mount)
 
-print(mounts)
+# print(mounts)
 
 THIS_FILE_DIR = os.path.realpath(os.path.dirname(__file__))
 dd.launch_python(
-    target=os.path.join(THIS_FILE_DIR, 'app_main.py'),  # point to a target script. If running remotely, this will be copied over
+    # target=os.path.join(THIS_FILE_DIR, 'app_main.py'),  # point to a target script. If running remotely, this will be copied over
+    target=os.path.join(REPO_DIR, 'noreward-rl-private/src/train.py'),
     mode=MY_RUN_MODE,
     mount_points=mounts,
     args={
-        'arg1': 50,
-        'arg2': 25,
-        'output_dir': OUTPUT_DIR,
-    }
+        'num-workers': 17,
+        'unsup': 'action',
+        'log-dir': OUTPUT_DIR.replace("richard", "ubuntu"),
+        'env-id': "MonsterKongTest-v0"
+    },
+    verbose=True,
+    # --num-workers 2 --log-dir ./tmp/mapswap --unsup action --env-id MonsterKong-v0
 )
 

@@ -35,7 +35,7 @@ class Mount(object):
 
 
 class MountLocal(Mount):
-    def __init__(self, local_dir, mount_point=None, cleanup=True,
+    def __init__(self, local_dir, mount_point=None, cleanup=False,
                 filter_ext=('.pyc', '.log', '.git', '.mp4'),
                 filter_dir=('data',),
                 **kwargs):
@@ -90,8 +90,8 @@ class MountGitRepo(Mount):
 
 
 class MountS3(Mount):
-    def __init__(self, s3_path, s3_bucket=None, sync_interval=15, output=False,
-            include_types=('*.txt', '*.csv', '*.json', '*.gz', '*.tar', '*.log', '*.pkl'), **kwargs):
+    def __init__(self, s3_path, s3_bucket=None, sync_interval=5, output=False,
+            include_types=('*.txt', '*.csv', '*.json', '*.gz', '*.tar', '*.log', '*.pkl', '*.richard-ubuntu', '*.mp4'), **kwargs):
         super(MountS3, self).__init__(**kwargs)
         if s3_bucket is None:
             # load from config

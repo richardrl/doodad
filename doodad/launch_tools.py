@@ -65,12 +65,14 @@ def launch_python(
     target_full_path = os.path.join(target_mount.docker_mount_dir(), os.path.basename(target))
 
     command = make_python_command(
-        target_full_path,
+        '/home/ubuntu/newnrl/noreward-rl-private/src/train.py',
         args=args,
         python_cmd=python_cmd,
         fake_display=fake_display,
         use_cloudpickle=use_cloudpickle,
     )
+    print("command")
+    print(command)
     mode.launch_command(command, mount_points=mount_points, dry=dry, verbose=verbose)
     return target_mount
 
@@ -87,13 +89,19 @@ def make_python_command(
         cmd = '{headless} {python_cmd} {target}'.format(headless=HEADLESS, python_cmd=python_cmd, target=target)
     else:
         cmd = '%s %s' % (python_cmd, target)
-
+    print("args")
+    print(args)
     args_encoded, cp_version = encode_args(args, cloudpickle=use_cloudpickle)
     if args:
-        cmd = '%s=%s %s=%s %s=%s %s' % (ARGS_DATA, args_encoded, 
-                USE_CLOUDPICKLE, str(int(use_cloudpickle)), 
-                CLOUDPICKLE_VERSION, cp_version,
-                cmd)
-
+        print("in args")
+        # cmd = '%s=%s %s=%s %s=%s %s' % (ARGS_DATA, args_encoded,
+        #         USE_CLOUDPICKLE, str(int(use_cloudpickle)),
+        #         CLOUDPICKLE_VERSION, cp_version,
+        #         cmd)
+        args_str = ""
+        for key in args.keys():
+            args_str = args_str + " --" + str(key) + " " + str(args[key])
+        cmd = cmd + args_str
+        print(cmd)
     return cmd
 
