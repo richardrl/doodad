@@ -3,6 +3,7 @@ import os
 from .mode import LOCAL, Local
 from .arg_parse import encode_args, ARGS_DATA, USE_CLOUDPICKLE, CLOUDPICKLE_VERSION
 from .mount import MountLocal
+import doodad as dd
 
 
 def launch_shell(
@@ -73,7 +74,10 @@ def launch_python(
     )
     print("command")
     print(command)
-    mode.launch_command(command, mount_points=mount_points, dry=dry, verbose=verbose)
+    if isinstance(mode, dd.mode.EC2AutoconfigDocker):
+        mode.launch_command(command, mount_points=mount_points, dry=dry, verbose=verbose)
+    elif isinstance(mode, dd.mode.LocalDocker):
+        mode.launch_command(command, mount_points=mount_points, dry=dry, verbose=verbose)
     return target_mount
 
 HEADLESS = 'xvfb-run -a -s "-ac -screen 0 1400x900x24 +extension RANDR"'

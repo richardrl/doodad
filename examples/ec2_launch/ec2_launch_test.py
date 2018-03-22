@@ -27,6 +27,7 @@ mode_ec2 = dd.mode.EC2AutoconfigDocker(
     # instance_type='m3.medium',
    spot_price=0.3,
     terminate=False,
+    s3_log_prefix="nconvs6-200g-experiment"
 )
 
 MY_RUN_MODE = mode_ec2  # CHANGE THIS
@@ -40,7 +41,7 @@ mounts = [
 ]
 
 if MY_RUN_MODE == mode_ec2:
-    output_mount = mount.MountS3(s3_path='outputs', mount_point=OUTPUT_DIR, output=True)  # use this for ec2
+    output_mount = mount.MountS3(s3_path='outputs', mount_point=OUTPUT_DIR, output=True, sync_interval=900)  # use this for ec2
 else:
     output_mount = mount.MountLocal(local_dir=os.path.join(EXAMPLES_DIR, 'tmp_output'),
         mount_point=OUTPUT_DIR, output=True)
@@ -58,9 +59,8 @@ dd.launch_python(
         'num-workers': 17,
         'unsup': 'action',
         'log-dir': OUTPUT_DIR.replace("richard", "ubuntu"),
-        'env-id': "MonsterKongTest-v0"
+        'env-id': "MonsterKongTrain-v0"
     },
     verbose=True,
-    # --num-workers 2 --log-dir ./tmp/mapswap --unsup action --env-id MonsterKong-v0
 )
 

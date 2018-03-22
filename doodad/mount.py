@@ -90,7 +90,7 @@ class MountGitRepo(Mount):
 
 
 class MountS3(Mount):
-    def __init__(self, s3_path, s3_bucket=None, sync_interval=5, output=False,
+    def __init__(self, s3_path, s3_bucket=None, sync_interval=15, output=False,
             include_types=('*.txt', '*.csv', '*.json', '*.gz', '*.tar', '*.log', '*.pkl', '*.richard-ubuntu', '*.mp4'), **kwargs):
         super(MountS3, self).__init__(**kwargs)
         if s3_bucket is None:

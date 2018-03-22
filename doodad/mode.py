@@ -404,7 +404,7 @@ class EC2SpotDocker(DockerMode):
                 # ))
                 sio.write("""
                 while /bin/true; do
-                    aws s3 sync {log_dir} {s3_path}
+                    aws s3 sync --delete {log_dir} {s3_path}
                     sleep {periodic_sync_interval}
                 done & echo sync initiated
                 """.format(
